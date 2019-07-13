@@ -21,7 +21,7 @@ function ffmpeg_inst()
         sudo yum -y install git autoconf automake gettext gcc gcc-c++ make libtool mercurial pkgconfig patch libXext-devel glibc-static libstdc++-static
     fi
     if [[ "$OS" == "Ubuntu" ]];then
-        sudo apt-get -y install git automake autoconf gettext gcc g++ make libtool mercurial pkg-config patch libXext-dev libc-dev libstdc++-4.8-dev cmake libx11-dev xorg-dev
+        sudo apt-get -y install git automake autoconf gettext gcc g++ make libtool mercurial pkg-config patch libc-dev libstdc++-4.8-dev cmake libx11-dev xorg-dev
     fi
 
     local src="$HOME/ffmpeg_source"
